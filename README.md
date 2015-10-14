@@ -177,7 +177,7 @@ tmpb3=0
 num1=20
 num2=20
 r=1 
-for(i in 1:100000)
+for(i in 1:1000000)
 {
 
 y0=rnorm(num1,100,30)
@@ -223,7 +223,7 @@ tmpb3=tmpb3+b3
 }
 
 sink("d:/type1_n_(1).txt")
-c(tmpa,tmpa1,tmpa2,tmpa3,tmpb,tmpb1,tmpb2,tmpb3)*100/100000
+c(tmpa,tmpa1,tmpa2,tmpa3,tmpb,tmpb1,tmpb2,tmpb3)*100/1000000
 sink()
 
 #uniform for type 1 errpr and power
@@ -241,7 +241,7 @@ a0=48.03847577
 b0=103.9230485+48.03847577
 a1=48.03847577
 b1=103.9230485+48.03847577
-for(i in 1:100000)
+for(i in 1:1000000)
 {
 
 y0=runif(num1,a0,b0)
@@ -288,7 +288,7 @@ tmpb3=tmpb3+b3
 
 
 sink("d:/type_1_u_(1).txt")
-c(tmpa,tmpa1,tmpa2,tmpa3,tmpb,tmpb1,tmpb2,tmpb3)*100/100000
+c(tmpa,tmpa1,tmpa2,tmpa3,tmpb,tmpb1,tmpb2,tmpb3)*100/1000000
 sink()
 
 #gamma for type 1 error and power
@@ -352,7 +352,7 @@ tmpb3=tmpb3+b3
 
 
 sink("d:/type1_g_(1).txt")
-c(tmpa,tmpa1,tmpa2,tmpa3,tmpb,tmpb1,tmpb2,tmpb3)*100/100000
+c(tmpa,tmpa1,tmpa2,tmpa3,tmpb,tmpb1,tmpb2,tmpb3)*100/1000000
 sink()
 
 #negative gamma for type 1 error and power
@@ -415,5 +415,5 @@ tmpb3=tmpb3+b3
 
 
 sink("f:/type1_ng_(1).txt")
-c(tmpa,tmpa1,tmpa2,tmpa3,tmpb,tmpb1,tmpb2,tmpb3)*100/100000
+c(tmpa,tmpa1,tmpa2,tmpa3,tmpb,tmpb1,tmpb2,tmpb3)*100/1000000
 sink()
